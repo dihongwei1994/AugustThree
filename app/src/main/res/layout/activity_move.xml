@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lcb.augustthree.DragView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.lcb.augustthree.DragView-->
+<!--        android:id="@+id/drag_view"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</com.lcb.augustthree.DragView>

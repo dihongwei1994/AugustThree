@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ic_white"
+    android:minWidth="200dp"
+    android:minHeight="200dp"
+    android:id="@+id/layout_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_camera"
+                android:padding="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/meitu"
+                android:src="@mipmap/ic_meitu"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/kuaishou"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_kuaishou"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/douyin"
+                android:padding="5dp"
+                android:src="@mipmap/ic_douyin"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:paddingTop="5dp"
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/one"
+                android:rotation="180"
+                android:padding="4dp"
+                android:src="@mipmap/ic_cancel"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/two"
+                android:padding="4dp"
+                android:src="@mipmap/ic_landscape"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/three"
+                android:padding="3dp"
+                android:src="@mipmap/ic_menu"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/four"
+                android:padding="3.5dp"
+                android:src="@mipmap/ic_scale2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/ll2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_green"/>
+
+    <ImageView
+        android:id="@+id/scale_"
+        android:src="@mipmap/ic_scale"
+        android:rotation="90"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/play"
+        android:src="@drawable/ic_state"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/set"
+        android:src="@mipmap/ic_set"
+        android:padding="9dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ll2"
+        android:layout_above="@id/set"
+        android:scrollbars="vertical"
+        android:scrollbarSize="2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content"
+            android:textScaleX="0.9"
+            android:textSize="13sp"
+            android:text="这个世界奇奇怪怪，总有人可可爱爱......"
+            android:textColor="@color/white"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D2633</color>
+    <color name="colorPrimaryDark">#1D2633</color>
+    <color name="colorAccent">#00B55F</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_dialog_title">#1D2633</color>
+    <color name="color_translation">#50000000</color>
+    <color name="color_green">#3DDB83</color>
+    <color name="color_black">#1D2633</color>
+    <color name="color_white_f">#C7FFE0</color>
+</resources>

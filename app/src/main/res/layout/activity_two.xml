@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="创建文本"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="完成"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:lineSpacingExtra="5dp"
+        android:letterSpacing="0.0"
+        android:textSize="13sp"
+        android:textColorHint="#171717"
+        android:textColor="#171717"
+        android:gravity="start"
+        android:minLines="4"
+        android:maxLines="4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="75dp"
+        android:paddingTop="35dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/bg_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_below="@id/input"
+        android:lineSpacingExtra="5dp"
+        android:letterSpacing="0.0"
+        android:textSize="13sp"
+        android:textColorHint="#171717"
+        android:textColor="#171717"
+        android:gravity="start"
+        android:lines="12"
+        android:maxLines="12"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="35dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/bg_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp"
+        android:layout_alignLeft="@id/input"
+        android:layout_alignTop="@id/input"
+        android:drawableLeft="@drawable/ic_two_left"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:text="请在下方输入标题"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="5dp"
+        android:layout_alignLeft="@id/input2"
+        android:layout_alignTop="@id/input2"
+        android:drawableLeft="@drawable/ic_two_left"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:text="请在下方输入内容"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/read"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:backgroundTint="@color/color_green"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="right"
+        android:layout_alignRight="@id/input2"
+        android:layout_alignTop="@id/input2"
+        android:textColor="@color/color_black"
+        android:text=" + 导入"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

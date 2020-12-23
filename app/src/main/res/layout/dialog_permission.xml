@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textScaleX="0.95"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:text="请点击同意并修改权限，否则提词器将无法正常显示。"
+        android:background="@drawable/bg_dialog_top"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:background="@drawable/bg_dialog_bottom"
+        android:layout_alignRight="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/cancel"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="取消"
+            android:gravity="center"
+            android:button="@null"
+            android:padding="17dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/bg_dialog_title"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/agree"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="同意"
+            android:gravity="center"
+            android:button="@null"
+            android:padding="17dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

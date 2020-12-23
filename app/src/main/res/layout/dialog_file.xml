@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:minHeight="55dp"
+        android:layout_width="250dp"
+        android:layout_height="350dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/color_black"
+        android:foregroundTint="@color/color_black"
+        android:backgroundTint="@color/color_black"
+        android:layout_width="22dp"
+        android:layout_height="22dp"/>
+
+    <TextView
+        android:id="@+id/null_data"
+        android:visibility="gone"
+        android:text="本地无内容"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

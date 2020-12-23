@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl">
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="背景透明"
+        android:textColor="#1A1A1A"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"/>
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/seek_bar3"
+        app:isb_max="10"
+        app:isb_progress="5"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/tv3"
+        app:isb_indicator_color="@color/color_green"
+        app:isb_indicator_text_color="#393939"
+        app:isb_indicator_text_size="8sp"
+        app:isb_thumb_size="5dp"
+        app:isb_track_progress_color="@color/color_green"
+        app:isb_track_background_color="#C7FFE0"
+        app:isb_thumb_color="@color/color_green"
+        app:isb_track_background_size="5dp"
+        app:isb_track_progress_size="5dp"
+        app:isb_track_rounded_corners="true" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/tv3"
+        android:text="字体透明"
+        android:textColor="#1A1A1A"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/seek_bar2"
+        app:isb_max="12"
+        app:isb_thumb_size="5dp"
+        app:isb_indicator_text_size="8sp"
+        app:isb_indicator_text_color="#393939"
+        app:isb_indicator_color="@color/color_green"
+        app:isb_track_rounded_corners="true"
+        app:isb_track_progress_size="5dp"
+        app:isb_track_background_size="5dp"
+        app:isb_track_progress_color="@color/color_green"
+        app:isb_track_background_color="#C7FFE0"
+        app:isb_thumb_color="@color/color_green"
+        android:layout_marginRight="12dp"
+        android:layout_alignBottom="@id/tv2"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_above="@id/tv2"
+        android:layout_marginBottom="30dp"
+        android:text="字体大小"
+        android:textColor="#1A1A1A"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/seek_bar"
+        app:isb_max="25"
+        app:isb_thumb_size="5dp"
+        app:isb_indicator_text_size="8sp"
+        app:isb_indicator_text_color="#393939"
+        app:isb_indicator_color="@color/color_green"
+        app:isb_track_rounded_corners="true"
+        app:isb_track_progress_size="5dp"
+        app:isb_track_background_size="6dp"
+        app:isb_track_progress_color="@color/color_green"
+        app:isb_track_background_color="#C7FFE0"
+        app:isb_thumb_color="@color/color_green"
+        android:layout_marginRight="12dp"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_above="@id/tv1"
+        android:layout_marginBottom="30dp"
+        android:text="滑动速度"
+        android:textColor="#1A1A1A"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/seek_bar0"
+        app:isb_max="10"
+        app:isb_thumb_size="5dp"
+        app:isb_indicator_text_size="8sp"
+        app:isb_indicator_text_color="#393939"
+        app:isb_indicator_color="@color/color_green"
+        app:isb_track_rounded_corners="true"
+        app:isb_track_progress_size="5dp"
+        app:isb_track_progress_color="@color/color_green"
+        app:isb_track_background_color="#C7FFE0"
+        app:isb_thumb_color="@color/color_green"
+        app:isb_track_background_size="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignBottom="@id/tv0"
+        android:layout_toRightOf="@id/tv0"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:paddingTop="5dp"
+        android:paddingLeft="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/tv_base"
+            android:text="基本设置"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:button="@null"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/tv_changer"
+            android:text="台词切换"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:button="@null"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:padding="6dp"
+        android:src="@mipmap/ic_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_black"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_black"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_black"/>
+
+    <View
+        android:layout_alignParentRight="true"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_below="@id/rg"
+        android:layout_width="match_parent"
+        android:minHeight="220dp"
+        android:layout_height="220dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-path
+        name="."
+        path="TEACHER" />
+
+    <!--name是一个引用字符串，path是文件夹的相对路径，apk存在哪个文件夹下全看path里写的啥，不记得哪里-->
+    <!--看到的，有人说name可以空，但是我实时是报错了，然后又看到博客说 . 代表接受所有字符串，果断填了个 .-->
+     <!--1. <files-path name="name" path="path" />-->
+    <!--物理路径相当于Context.getFilesDir() + /path/。-->
+     <!--2.<cache-path name="name" path="path" />-->
+    <!--物理路径相当于Context.getCacheDir() + /path/。-->
+     <!--3. <external-path name="name" path="path" />-->
+    <!--物理路径相当于Environment.getExternalStorageDirectory() + /path/。-->
+     <!--4. <external-files-path name="name" path="path" />-->
+    <!--物理路径相当于**Context.getExternalFilesDir(String) **+ /path/。-->
+     <!--5. <external-cache-path name="name" path="path" />-->
+    <!--物理路径相当于Context.getExternalCacheDir() + /path/-->
+
+</resources>
+

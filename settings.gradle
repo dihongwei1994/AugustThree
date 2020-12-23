@@ -1,0 +1,2 @@
+include ':app', ':chatsdk'
+rootProject.name='AugustThree'

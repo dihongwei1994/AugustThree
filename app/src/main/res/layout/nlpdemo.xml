@@ -53,5 +53,9 @@
 
     </LinearLayout>
 
-
+    <Button
+        android:id="@+id/bt_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ登录" />
 </LinearLayout>

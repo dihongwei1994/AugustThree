@@ -1,6 +1,8 @@
 package com.lcb.augustthree;
 import android.app.Application;
 
+import com.mob.MobSDK;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +24,7 @@ public class MyApp extends Application {
         super.onCreate();
         instance = this;
         list = new ArrayList<>();
+        MobSDK.submitPolicyGrantResult(true, null);
     }
 
 }

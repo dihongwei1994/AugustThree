@@ -23,6 +23,8 @@ import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.lcb.speechrecognition.XFDemo;
+
 import java.util.List;
 
 import butterknife.BindView;
@@ -39,7 +41,8 @@ public class OneActivity extends AppCompatActivity {
     TextView timeOut;
     @BindView(R.id.rl)
     RelativeLayout rl;
-
+    @BindView(R.id.tv_speech)
+    TextView tvSpeech;
     private final static int SCROLL_MSG = 1;
     private SearchAdapter adapter;
     private WindowManager mWindowMgr;
@@ -236,7 +239,7 @@ public class OneActivity extends AppCompatActivity {
         }
     }
 
-    @OnClick({R.id.add, R.id.direction,R.id.right})
+    @OnClick({R.id.add, R.id.direction,R.id.right,R.id.tv_speech})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.direction:
@@ -245,6 +248,9 @@ public class OneActivity extends AppCompatActivity {
                 break;
             case R.id.add:
                 startActivity(new Intent(this, TwoActivity.class));
+                break;
+            case R.id.tv_speech:
+                startActivity(new Intent(this, XFDemo.class));
                 break;
         }
     }

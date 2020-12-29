@@ -70,11 +70,19 @@
         android:text="暂无内容"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
+    <TextView
+        android:id="@+id/tv_speech"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:gravity="left|center"
+        android:layout_below="@+id/direction"
+        android:text="语音识别"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
         android:layout_marginTop="0.5dp"
-        android:layout_below="@+id/direction"
+        android:layout_below="@+id/tv_speech"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

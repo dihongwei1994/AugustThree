@@ -92,13 +92,14 @@
         <activity
             android:name=".OneActivity"
             android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name="com.lcb.speechrecognition.NlpDemo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name="com.lcb.speechrecognition.XFDemo">
+
         </activity>
     </application>
 

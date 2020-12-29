@@ -15,6 +15,9 @@ import com.aiuisdk.SpeechManager;
 import com.lcb.augustthree.R;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.tencent.qq.QQ;
 import io.reactivex.disposables.Disposable;
 
 
@@ -23,13 +26,13 @@ import io.reactivex.disposables.Disposable;
  *
  * @author ydong
  */
-public class NlpDemo extends Activity {
+public class XFDemo extends Activity {
 
 
     private static final String TAG = "ydong";
     private TextView question;
     private TextView answer;
-    private Button button;
+    private Button button, bt_qq;
 
     @Override
     @SuppressLint("ShowToast")
@@ -38,17 +41,35 @@ public class NlpDemo extends Activity {
         setContentView(R.layout.nlpdemo);
         initPermission();
         initView();
+
     }
 
     private void initView() {
         question = findViewById(R.id.question);
         answer = findViewById(R.id.answer);
         button = findViewById(R.id.btn);
+        bt_qq = findViewById(R.id.bt_qq);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 initChatSDK();
                 button.setText("正在录音...");
+            }
+        });
+        bt_qq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Platform plat = ShareSDK.getPlatform(QQ.NAME);
+//移除授权状态和本地缓存，下次授权会重新授权
+                plat.removeAccount(true);
+//SSO授权，传false默认是客户端授权
+                plat.SSOSetting(false);
+//授权回调监听，监听oncomplete，onerror，oncancel三种状态
+                plat.setPlatformActionListener(null);
+//抖音登录适配安卓9.0
+//ShareSDK.setActivity(MainActivity.this);
+//要数据不要功能，主要体现在不会重复出现授权界面
+                plat.showUser(null);
             }
         });
     }
